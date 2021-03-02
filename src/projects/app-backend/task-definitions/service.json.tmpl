@@ -1,0 +1,18 @@
+[
+  {
+    "name": "app-stg-backend",
+    "image": "${image}",
+    "essential": true,
+    "cpu" : 0,
+    "environment": [],
+    "mountPoints": [],
+    "volumesFrom" : [],
+    "portMappings": [
+      {
+        "containerPort": ${port},
+        "hostPort": ${port},
+        "protocol" : "tcp"
+      }
+    ]
+  }
+]
